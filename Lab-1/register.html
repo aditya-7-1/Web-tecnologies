@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form - Lab 1</title>
+    <style>
+        body { font-family: Arial; max-width: 500px; margin: 50px auto; padding: 20px; }
+        h1 { text-align: center; color: #1e40af; }
+        label { display: block; margin: 15px 0 5px; font-weight: bold; }
+        input { width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 5px; box-sizing: border-box; }
+        button { background: #1e40af; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; width: 100%; font-size: 16px; }
+        button:hover { background: #3b82f6; }
+        input[type="checkbox"] { width: auto; margin-right: 10px; }
+    </style>
+</head>
+<body>
+    <h1>✏️ Registration Form - Lab 1 Exercise 3</h1>
+    <form action="/register" method="post">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="8">
+        
+        <label>
+            <input type="checkbox" name="terms" required> Accept Terms & Conditions
+        </label>
+        
+        <button type="submit">Register Now</button>
+    </form>
+    <p style="text-align: center; margin-top: 20px;"><a href="index.html">← Back to VITAP Portfolio</a></p>
+</body>
+</html>
+
+
+
