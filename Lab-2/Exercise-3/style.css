@@ -1,0 +1,4 @@
+.columns { display: flex; gap: 10px; }
+.column { border: 2px solid gray; padding: 20px; min-height: 300px; width: 200px; }
+.task { padding: 10px; margin: 5px; background: lightblue; cursor: move; }
+.completed { background: green !important; }

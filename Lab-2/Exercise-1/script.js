@@ -1,0 +1,15 @@
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+ctx.fillStyle = 'blue';
+ctx.fillRect(50, 50, 100, 60);
+ctx.beginPath();
+ctx.arc(300, 100, 40, 0, 2 * Math.PI);
+ctx.fillStyle = 'red';
+ctx.fill();
+ctx.beginPath();
+ctx.moveTo(50, 200);
+ctx.lineTo(200, 250);
+ctx.stroke();
+ctx.fillStyle = 'black';
+ctx.font = '20px Arial';
+ctx.fillText('HTML5 Canvas', 150, 280);

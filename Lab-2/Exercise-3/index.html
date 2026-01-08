@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<input id="taskInput" placeholder="Enter task name">
+<button id="addBtn">Add Task</button>
+<div class="columns">
+<div id="todo" class="column" ondrop="drop(event)" ondragover="allowDrop(event)">To Do</div>
+<div id="progress" class="column" ondrop="drop(event)" ondragover="allowDrop(event)">In Progress</div>
+<div id="completed" class="column" ondrop="drop(event)" ondragover="allowDrop(event)">Completed</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

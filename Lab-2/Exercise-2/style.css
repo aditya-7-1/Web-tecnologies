@@ -1,0 +1,6 @@
+audio, video {
+margin: 10px 0;
+}
+#audioTime, #videoTime {
+font-family: Arial;
+}
