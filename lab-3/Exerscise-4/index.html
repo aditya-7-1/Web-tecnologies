@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="monitor">
+        <h3>Activity Log</h3>
+        <div id="log"></div>
+        <p>Clicks: <span id="clickCount">0</span> | Keys: <span id="keyCount">0</span></p>
+        <button onclick="resetLog()">Reset</button>
+        <button onclick="exportLog()">Export</button>
+    </div>
+    <textarea id="demo" placeholder="Type here...">Demo area for events</textarea>
+    <script src="script.js"></script>
+</body>
+</html>
