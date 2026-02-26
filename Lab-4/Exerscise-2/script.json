@@ -1,0 +1,30 @@
+let timer;
+const search = document.getElementById('search');
+
+search.addEventListener('keyup', () => {
+    clearTimeout(timer);
+    timer = setTimeout(performSearch, 500);
+});
+
+function performSearch() {
+    const query = search.value.toLowerCase();
+    if (query === "") {
+        document.getElementById('results').innerHTML = "";
+        return;
+    }
+    fetch('products.json')
+        .then(res => res.json())
+        .then(data => {
+            const filtered = data.filter(p => p.name.toLowerCase().includes(query));
+            const container = document.getElementById('results');
+            if (filtered.length === 0) {
+                container.innerHTML = "No results found";
+            } else {
+                container.innerHTML = "";
+                filtered.forEach(p => {
+                    container.innerHTML += `<p>${p.name} - ₹${p.price} [${p.category}]</p>`;
+                });
+            }
+        })
+        .catch(err => console.error("Error fetching data"));
+}

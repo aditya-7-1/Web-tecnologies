@@ -1,0 +1,6 @@
+[
+    {"name": "Laptop", "price": 50000, "category": "Electronics"},
+    {"name": "Mouse", "price": 500, "category": "Electronics"},
+    {"name": "Keyboard", "price": 1200, "category": "Electronics"},
+    {"name": "Chair", "price": 2000, "category": "Furniture"}
+]
